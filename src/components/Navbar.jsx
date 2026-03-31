@@ -10,6 +10,7 @@ export default function Navbar() {
         <li>
           <NavLink
             to="/"
+            end
             className={({ isActive }) =>
               isActive ? 'text-blue-600 font-medium' : 'text-gray-600 hover:text-gray-900'
             }
