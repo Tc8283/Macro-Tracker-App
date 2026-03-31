@@ -1,16 +1,44 @@
-# React + Vite
+# React Starter Template
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A minimal React starter template — ready to build on.
 
-Currently, two official plugins are available:
+## Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **React 19** + **Vite 8**
+- **Tailwind CSS v3** — utility-first styling
+- **React Router v7** (library mode) — client-side routing
+- **ESLint v9** (flat config) — react + hooks rules
+- **Prettier** — code formatting
 
-## React Compiler
+## Project Structure
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```
+src/
+  components/
+    Navbar.jsx       ← top nav bar
+  pages/
+    Home.jsx         ← "/" route
+    NotFound.jsx     ← "*" catch-all 404
+  App.jsx            ← router setup
+  main.jsx           ← entry point
+  index.css          ← Tailwind directives
+```
 
-## Expanding the ESLint configuration
+## Scripts
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start dev server at http://localhost:5173 |
+| `npm run build` | Build for production |
+| `npm run preview` | Preview production build |
+| `npm run lint` | Run ESLint on src/ |
+| `npm run format` | Run Prettier on src/ |
+
+## Getting Started
+
+```bash
+npm install
+npm run dev
+```
+
+To use this as a starting point for a new project, copy the folder and run `npm install`.
